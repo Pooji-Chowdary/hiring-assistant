@@ -9,7 +9,7 @@ st.set_page_config(page_title="Hiring Assistant ", page_icon="🤖")
 st.title("🤖 TalentScout Hiring Assistant ")
 st.write("Welcome! I’m your AI assistant to help with the initial screening process. Let's begin.")
 
-# Load model once
+# Load model 
 @st.cache_resource
 def load_model():
     tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-large")
